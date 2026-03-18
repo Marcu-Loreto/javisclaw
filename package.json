@@ -1,0 +1,38 @@
+{
+  "name": "openclaw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test:local": "tsx scripts/test-local.ts",
+    "test:telegram": "tsx scripts/test-telegram.ts",
+    "test:balance": "tsx scripts/check-balance.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.45.0",
+    "@types/uuid": "^10.0.0",
+    "axios": "^1.13.6",
+    "better-sqlite3": "^12.8.0",
+    "dotenv": "^17.3.1",
+    "grammy": "^1.41.1",
+    "js-yaml": "^4.1.1",
+    "openai": "^6.32.0",
+    "pdf-parse": "^2.4.5",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.5.0",
+    "@types/pdf-parse": "^1.1.5",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
